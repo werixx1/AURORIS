@@ -1,0 +1,2 @@
+# AURORIY
+python projekt:D

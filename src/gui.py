@@ -106,16 +106,20 @@ class Auroris(ctk.CTk):
                                          hover_color="#7F3EF0")
             link3_button.pack(pady=4)
 
-
-
         def show_how_popup():
             popup = ctk.CTkToplevel(self)
-            popup.geometry("300x200+500+200")
+            popup.geometry("300x300")
             popup.title("How does it work")
             popup.resizable(False, False)
             popup.grab_set()
 
-            label = ctk.CTkLabel(popup, text="  ", 
+            with open("AURORIS/how_does_it_work.txt") as file:
+                text = file.read()
+
+            scrollable_frame = ctk.CTkScrollableFrame(popup)
+            scrollable_frame.pack(fill="both", expand=True)
+
+            label = ctk.CTkLabel(scrollable_frame, text=text, 
                                  font=("Verdana", 13))
             label.pack(pady=50)
 

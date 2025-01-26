@@ -152,7 +152,7 @@ class Auroris(ctk.CTk):
             link3_button.pack(pady=4)
 
             link4_button = ctk.CTkButton(popup, text="Abisko, Sweden", 
-                                         command=lambda: self.open_live_in_window("https://lightsoverlapland.com/aurora-webcam/"),
+                                         command=lambda: self.open_live_in_window("https://auroraskystation.se/en/live-cam/"),
                                          fg_color="#BF3EF0",
                                          hover_color="#7F3EF0")
             link4_button.pack(pady=4)
@@ -217,7 +217,7 @@ class Auroris(ctk.CTk):
                 {"name": "Fairbanks, AK", "lat": 64.8378, "long": -147.7164, "link": "https://explore.org/livecams/UAF/aurora-cam"},
                 {"name": "Vorkuta, Russia", "lat": 67.5000, "long": 64.0000, "link": "https://starvisor.net/vrkt/"},
                 {"name": "Rotstund, Norway", "lat": 69.0833, "long": 19.1500, "link": "https://lyngen-north.com/aurora-borealis-live-cam"},
-                {"name": "Abisko, Sweden", "lat": 68.3531, "long": 18.8350, "link": "https://lightsoverlapland.com/aurora-webcam/"}
+                {"name": "Abisko, Sweden", "lat": 68.3531, "long": 18.8350, "link": "https://auroraskystation.se/en/live-cam/"}
             ]
             
             closest_location = None

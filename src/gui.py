@@ -11,7 +11,7 @@ class Auroris(ctk.CTk):
         self.title("AURORIS")
         self.geometry("900x600")
         self.resizable(False, False)
-        self.bg_image = ctk.CTkImage(Image.open("AURORIS/src/imgs/background.png"), size=(900, 600))
+        self.bg_image = ctk.CTkImage(Image.open("src/imgs/background.png"), size=(900, 600))
         self.bg_image_label = ctk.CTkLabel(self, text="", image=self.bg_image)
         self.bg_image_label.pack(fill="both", expand=True)
 
@@ -113,7 +113,7 @@ class Auroris(ctk.CTk):
             popup.resizable(False, False)
             popup.grab_set()
 
-            with open("AURORIS/how_does_it_work.txt") as file:
+            with open("how_does_it_work.txt") as file:
                 text = file.read()
 
             scrollable_frame = ctk.CTkScrollableFrame(popup)
@@ -187,7 +187,7 @@ class Auroris(ctk.CTk):
                                           text_color="#C2BBC5")
         self.live_button.place(x=310, y=10)
 
-        github_image = ctk.CTkImage(Image.open("AURORIS/src/imgs/git.png"), size=(25, 25))
+        github_image = ctk.CTkImage(Image.open("src/imgs/git.png"), size=(25, 25))
         self.github_button = ctk.CTkButton(self, text="", 
                                            image=github_image,
                                            command=github_open, 

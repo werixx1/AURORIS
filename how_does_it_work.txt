@@ -1,0 +1,39 @@
+First, the program uses 
+the get_user_location() 
+function to determine 
+the user's current 
+location based on their IP.
+If the geographic coordinates 
+are obtained, the function 
+returns them along with 
+the city name.
+
+Then the program uses 
+the get_aurora_data() 
+function to check 
+whether the aurora 
+borealis is visible at 
+that location.
+This function uses an API 
+that returns the kp value 
+(aurora activity index)
+and on this basis determines 
+whether the aurora 
+is visible in a given area.
+
+Next program uses the 
+haversine() function 
+to calculate the distance 
+between the user's geographic 
+coordinates and other known 
+locations where the aurora 
+borealis may be visible 
+(e.g., Fairbanks, Alaska).
+Based on the calculated 
+distance, the program 
+can suggest the user 
+the closest location 
+where the aurora is 
+visible and allow him 
+to open a live broadcast.
+

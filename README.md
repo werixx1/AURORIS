@@ -2,7 +2,8 @@
 <h1 style="font-family: 'Orbitron'">⟡ AURORIS - Aurora Forecast and Live Viewing App ⟡</h1>
 Auroris is an interactive application that helps users track aurora activity and view live aurora transmissions from various locations. The app allows users to check if aurora is visible in their area based on their location (IP) and provides information about the KP index (auroral activity) and whenether it's high enough to see aurora. It also provides live streaming of auroras from popular locations worldwide.
 </div>
-
+<br>
+<img src="https://github.com/user-attachments/assets/d83299de-fe1e-486c-8655-446e156b6744">
 
 ## Features
    - Current Location Detection: Automatically retrieves the user's geographic location (latitude and longitude) using the IP address.

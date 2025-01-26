@@ -242,8 +242,17 @@ class Auroris(ctk.CTk):
 
     #webview 
     def open_live_in_window(self, url):
+
+        # js = """
+        # var acceptButton = document.querySelector('button:contains("Accept All")');
+        # if (acceptButton) {
+        # acceptButton.click();
+        #                     }
+        #      """
         webview.create_window("LIVE AURORA", url, 
                               resizable=False,
                               width=800, 
-                              height=600)
+                              height=600,
+                              #js_api={"accept_cookies": js}
+                              )
         webview.start()
